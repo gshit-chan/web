@@ -1,0 +1,15 @@
+overwrite: true
+schema: 'http://localhost:xxxx/graphql'
+documents: 'src/lib/graphql/**/*.gql'
+
+config:
+    withHooks: false
+
+generates:
+    src/lib/generated/graphql.ts:
+        plugins:
+            - 'typescript'
+            - 'typescript-operations'
+            - 'typescript-urql'
+            - 'urql-svelte-operations-store'
+            - 'named-operations-object'

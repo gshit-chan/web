@@ -1,0 +1,8 @@
+query GetThread($getThreadId: String!) {
+	get_thread(id: $getThreadId) {
+		id
+		chat
+		message
+		username
+	}
+}

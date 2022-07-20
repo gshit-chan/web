@@ -1,0 +1,8 @@
+query GetThreads {
+	get_threads {
+		id
+		username
+		title
+		message
+	}
+}

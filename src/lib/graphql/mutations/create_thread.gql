@@ -1,0 +1,5 @@
+mutation CreateThread($chat: String!, $message: String!, $title: String!) {
+	create_thread(chat: $chat, message: $message, title: $title) {
+		id
+	}
+}
